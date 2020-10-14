@@ -111,4 +111,8 @@ li {
     li {
         font-size: 14px;
     }
+
+    #inner{
+        padding: 1em;
+    }
 }
