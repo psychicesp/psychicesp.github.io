@@ -13,7 +13,24 @@ body {
     background-color: rgb(1, 2, 70);
 }
 
-</style>img {}
+h2 {
+    font-size: 36px;;
+}
+
+h3{
+    font-size: 26px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+h5{
+    font-size: 18px;
+    font-style: italic;
+}
+
+img {}
 
 #inner {
     padding: 20px 80px;
@@ -28,15 +45,28 @@ body {
     padding-bottom: 1em;
     border-bottom: 2px solid rgb(1, 2, 70, 0.35);
 }
+.section{
+    padding: 1em;
+    border-bottom: 2px solid rgb(1, 2, 70, 0.35);
+}
 
+.emp_section{
+    border-bottom: 2px solid rgb(1, 2, 70, 0.075);
+    padding: 1em;
+}
+
+.emp_section_last{
+
+    padding: 1em;
+}
+
+.section_last{
+    padding: 1em;
+}
 .Name {
-    font-size: 40px;
+    font-size: 60px;
 }
 
-.Title {
-    font-style: italic;
-    font-size: 26px;
-}
 
 .email {
     font-size: 18px
@@ -48,4 +78,25 @@ body {
 
 .mug {
     margin-left: 100px;
+}
+
+.brand_statement {
+    text-align: left;
+}
+
+
+li {
+
+    line-height: 24px;
+;
+}
+
+.talent {
+
+    list-style-type: none;
+    border-bottom: 2px solid rgb(1, 2, 70, 0.35)
+}
+
+.last {
+    border-bottom: 0
 }
