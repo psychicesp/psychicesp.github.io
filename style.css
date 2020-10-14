@@ -50,19 +50,12 @@ img {}
     border-bottom: 2px solid rgb(1, 2, 70, 0.35);
 }
 
+
 .emp_section{
     border-bottom: 2px solid rgb(1, 2, 70, 0.075);
     padding: 1em;
 }
 
-.emp_section_last{
-
-    padding: 1em;
-}
-
-.section_last{
-    padding: 1em;
-}
 .Name {
     font-size: 60px;
 }
@@ -100,3 +93,8 @@ li {
 .last {
     border-bottom: 0
 }
+@media screen and (min-width: 725px) {
+    h1 {
+      font-size: 65%
+    }
+  }
