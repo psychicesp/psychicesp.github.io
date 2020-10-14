@@ -9,15 +9,15 @@ body {
 }
 
 #inner {
-    padding: 10px 80px;
-    margin: 80px auto;
+    padding: 20px 80px;
+    margin: 100px auto;
     background: #f5f5f5;
     border: solid rgb(1, 2, 70);
     border-width: 7px 0 2px 0;
 }
 
 .Eric_title_box {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     padding-bottom: 1em;
     border-bottom: 2px solid rgb(1, 2, 70, 0.35);
 }
