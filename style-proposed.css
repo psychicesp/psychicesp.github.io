@@ -8,6 +8,10 @@ body {
     color: rgb(1, 2, 70);
 }
 
+img {
+    margin-right: 30px;
+}
+
 #inner {
     padding: 20px 80px;
     margin: 100px auto;
@@ -37,4 +41,8 @@ body {
 
 .phone {
     font-size: 18px
+}
+
+.mug {
+    margin-left: 100px;
 }
