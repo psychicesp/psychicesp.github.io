@@ -1,6 +1,5 @@
 /*--------------------------------------------Navbar-------------------------------------------------------*/
 
-
 /*--------------------------------------------Navbar-------------------------------------------------------*/
 
 body {
@@ -13,19 +12,23 @@ body {
     background-color: rgb(1, 2, 70);
 }
 
-h2 {
-    font-size: 36px;;
+h1 {
+    font-size: 55px;
 }
 
-h3{
+h2 {
+    font-size: 36px;
+}
+
+h3 {
     font-size: 26px;
 }
 
-h4{
+h4 {
     font-size: 20px;
 }
 
-h5{
+h5 {
     font-size: 18px;
     font-style: italic;
 }
@@ -45,21 +48,16 @@ img {}
     padding-bottom: 1em;
     border-bottom: 2px solid rgb(1, 2, 70, 0.35);
 }
-.section{
+
+.section {
     padding: 1em;
     border-bottom: 2px solid rgb(1, 2, 70, 0.35);
 }
 
-
-.emp_section{
+.emp_section {
     border-bottom: 2px solid rgb(1, 2, 70, 0.075);
     padding: 1em;
 }
-
-.Name {
-    font-size: 60px;
-}
-
 
 .email {
     font-size: 18px
@@ -77,15 +75,12 @@ img {}
     text-align: left;
 }
 
-
 li {
-
     line-height: 24px;
-;
+    ;
 }
 
 .talent {
-
     list-style-type: none;
     border-bottom: 2px solid rgb(1, 2, 70, 0.35)
 }
@@ -93,8 +88,27 @@ li {
 .last {
     border-bottom: 0
 }
-@media screen and (min-width: 725px) {
+
+@media screen and (max-width: 725px) {
     h1 {
-      font-size: 65%
+        font-size: 28px;
     }
-  }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 10;
+    }
+    li {
+        font-size: 10;
+    }
+}
