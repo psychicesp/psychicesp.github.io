@@ -54,21 +54,12 @@ img {}
     padding: 1em;
 }
 
-.email {
+.info{
     font-size: 18px
 }
 
-.phone {
-    font-size: 18px
-}
 
-.mug {
-    margin-left: 100px;
-}
 
-.brand_statement {
-    text-align: left;
-}
 
 li {
     line-height: 24px;
