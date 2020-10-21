@@ -73,7 +73,7 @@ li {
     border-bottom: 0
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 850px) {
     h1 {
         font-size: 28px;
     }
