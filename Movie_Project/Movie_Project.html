@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <title>Movie Data</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top navbar-custom" style="background-color: #010246">
+        <a class="navbar-brand" href="index.html"><strong>Movie Data</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index/RawData.html">Raw Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index/Comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Visualizations</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="index/RatedGtoR.html">Rated G to R</a>
+                        <a class="dropdown-item" href="index/NumberOfGenres.html">Number of Genres</a>
+                        <a class="dropdown-item" href="index/EffectOfGenre.html">Effect of Genre</a>
+                        <a class="dropdown-item" href="index/NumberOfVotes.html">Number of Votes</a>
+                    </div>
+            </ul>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="inner">
+                    <h1>The Analysis of Movie Data</h1>
+                    <br>
+                    <h3>Why movie data?</h3>
+                    <p class='prose'>Movie data can be some of the best data to play around with Data Analytics
+                        ironically
+                        because, by rights, it should be some of the worst to work with.
+                        There is no objective way to determine whether or not a movie is 'good.' People who make movies
+                        prefer them to make a lot of money, but many agree than some of
+                        these high-grossing money-grabs aren't good movies and one of the better ways to make money in
+                        the long run and secure a stable career is to produce a movie that is,
+                        well, <em>good</em>. If one tries to use a metric other than money-made to determing how 'good'
+                        a movie
+                        is, there is no one-size-fits-all solution to use as a response variable.
+                        If one does decide to use money-made as a response variable for the success of a movie, that has
+                        its own issues. A 2000 dollar is worth more than a 2020 dollar, yet a movie
+                        released in 2000 has had more time to make money than one in 2000.</p>
+                    <p class='prose'>Beyond deciding on a response variable, there are many many factors which determine
+                        a movies outcome. A large mass of discrete, continuous and catergorical variables determines a
+                        movies success. Some are easy to find and can be pulled from the same sources at the movie data
+                        itself but many are hidden and hard to isolate, such as the historical context and which other
+                        movies were out at the same time. In addition the intangible factor of how 'good' it actually is
+                        might have the largest effect. While it is the very Holy Grail we are questing for, we know from
+                        the beginning it is a fruitless quest and this invisible, immeasureable variable can turn out to
+                        be our biggest confounder.
+                    </p>
+                    <p class="prose">The saving grace of movie data would be how plentiful it is. No matter how noisy or
+                        incomplete the data is there is just so darn much of it that you can mine statistical
+                        significance when you find a variable with a real effect. This is what makes it so great for
+                        honing Data Analysis skill. A fumbling analysis can find a neat relationship yet there is always
+                        more work to be done to find something more interesting.</p>
+                    <h3>My Analysis</h3>
+                    <p class='prose'> The data was leftover from a group project. Building on the exploratory analysis
+                        done as a group and being now familiar with the data made for a great opportunity to make some
+                        actual predictions to do some bona fide hypothesis testing.
+                    </p>
+                    <p class='prose'>
+                        The 'Box_Office' seemed a great response variable as it seemed closest to what a production
+                        company would consider a success, but in addition to the confounding variables mentioned above,
+                        the actual reporting of Box Office take seemed surprisingly sparse, with almost all 'null'
+                        values pre-2000.
+                    </p>
+                    <p class="prose"> A quick correlation matrix of all proposed response variables revealed IMDb Rating to be
+                        a pretty consitently good predictor of success by the other metrics. It also was almost never
+                        null which made it a great alternative to Box Office when that data was sparse.</p>
+                        <p class = "prose"> For these reasons the response variables of choice were 'Box Office' and 'IMDb Rating'</p>
+
+                </div>
+            </div>
+            <div class="col-4 sidebar">
+                <a href="index/RatedGtoR.html"><img src="Figures/TitleCards/BarTitle.png" class="img-fluid"></a>
+                <p>Rated G to R</p>
+                <br>
+                <a href="index/NumberOfGenres.html"><img src="Figures/TitleCards/LineTitle.png" class="img-fluid"></a>
+                <p>Number of Ratings</p>
+                <br>
+                <a href="index/EffectOfGenre.html"><img src="Figures/TitleCards/BoxTitle.png" class="img-fluid"></a>
+                <p>Effect of Genre</p>
+                <br>
+                <a href="index/NumberOfVotes.html"><img src="Figures/TitleCards/ScatterTitle.png" class="img-fluid"></a>
+                <p>Number of Votes</p>
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

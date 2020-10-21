@@ -1,0 +1,163 @@
+
+
+body {
+    font-family: Georgia;
+    color: rgb(1, 2, 70);
+}
+
+table{
+    padding: 3px;
+    margin: 5px;
+    font-size: 10px;
+    background: #e5e5e5;
+}
+
+figure{
+    background:  #e5e5e5;
+}
+
+.datatable{
+    max-width: 800px;
+}
+
+td{
+    word-break:break-all;
+}
+
+p{
+    padding: 25px;
+}
+
+img{
+    padding: 5px;
+}
+
+h1 {
+    font-size: 55px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    padding: 15px;
+}
+
+h3 {
+    font-size: 26px;
+
+
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+
+.inner {
+
+    padding: 20px;
+    margin: 100px auto;
+    background: #e5e5e5;
+    border: solid rgb(1, 2, 70);
+    border-width: 7px 0 2px 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.prose{
+    text-indent: 40px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sidebar{
+    padding: 20px;
+    margin: 50px auto;
+    background-color: rgb(1, 2, 70);
+    color: #e5e5e5;
+    margin-left:0;
+    margin-right:0;
+    text-align:center;
+    font-size: 18px;
+}
+
+img {
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+  }
+
+.Eric_title_box {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid rgb(1, 2, 70, 0.35);
+}
+
+.section {
+    padding: 1em;
+    border-bottom: 2px solid rgb(1, 2, 70, 0.35);
+}
+
+.emp_section {
+    border-bottom: 2px solid rgb(1, 2, 70, 0.075);
+    padding: 1em;
+}
+
+.info{
+    font-size: 18px
+}
+
+li {
+    line-height: 24px;
+    ;
+}
+
+.talent {
+    list-style-type: none;
+    border-bottom: 2px solid rgb(1, 2, 70, 0.35)
+}
+
+.last {
+    border-bottom: 0
+}
+
+@media screen and (max-width: 725px) {
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 14px;
+    }
+    li {
+        font-size: 14px;
+    }
+
+    #inner{
+        padding: 1em;
+    }
+    table{
+        padding: 0px;
+        margin: 0px;
+        font-size: 8px;
+        background: #e5e5e5;
+    }
+}
