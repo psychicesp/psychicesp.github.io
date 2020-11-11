@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../style.css" media="all" />
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-custom" style="background-color: #010246">
+    <a class="navbar-brand" href="../index.html"><strong>Eric Penrose - Data Analyst </strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/psychicesp"><img src="../Icons/GitHub.png"
+                        class="img-fluid" title="My GitHub"> </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/ericspenrose/"><img src="../Icons/LinkedIn.png"
+                        class="img-fluid" title="My LinkedIn"> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Movie_Project/Movie_Data.html">Movie Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Bellybutton_Page.html">Bellybutton Biodiversity</a>
+        </li>
+        </ul>
+        </form>
+    </div>
+</nav>
+  <div class="container title">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center purp lined">
+        <h1 class = text-center><br>Bellybutton Biodiversity Dashboard</h1>
+        <a href="https://github.com/psychicesp/psychicesp.github.io/tree/master/Bellybutton_Biodiversity"><button
+          type="button" class="btn btn-dark" style="background-color: rgb(225, 0, 255)">Github
+          Link</button></a>
+          <br>
+          <a href="http://robdunnlab.com/projects/belly-button-biodiversity/">Data from: http://robdunnlab.com/projects/belly-button-biodiversity/</a>
+          <br>
+          <br>
+        <h4>This project is to showcase interactive charts using data pulled from the url above</h4> 
+        <h4>The graphs below are interractive and you can view data from another test subject by choosing one from the "Test Subject ID#" dropdown menu</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well lined purp text-center">
+          <h4><strong>Test Subject ID #:</strong></h4>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary lined">
+          <div class="panel-heading"style= "background-color: rgb(236, 209, 252); color: rgb(0, 0, 65); border: rgb(0,0,65)">
+            <h4 class="panel-title" ><strong>Demographic Info</strong></h4>
+          </div>
+          <div id="sample-metadata" class="panel-body purp black-text"></div>
+        </div>
+      </div>
+      <div class="col-md-6 purp lined">
+        <div id="bar">
+        </div>
+      </div>
+      <div class="col-md-4 purp lined">
+        <div id="gauge"><p></p>
+        </div>
+      </div>
+    </div>
+    <div class="row purp lined">
+      <div class="col-md-12">
+        <div id="bubble"><p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/samples.js"></script>
+  <script src="static/js/app.js"></script>
+
+  
+</body>
+
+</html>
