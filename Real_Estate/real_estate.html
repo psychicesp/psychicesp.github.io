@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style.css" media="all" />
+    <title>Real Estate Analysis for AI-AI</title>
+</head>
+
+<body style="font-family: Georgia, 'Times New Roman', Times, serif;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom" style="background-color: #010246">
+        <a class="navbar-brand" href="../index.html"><strong>Eric Penrose - Data Analyst </strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/psychicesp"><img src="../Icons/GitHub.png" class="icon"
+                            title="My GitHub"> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/ericspenrose/"><img
+                            src="../Icons/LinkedIn.png" class="icon" title="My LinkedIn"> </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Project Showcase</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Real Estate Analysis</a>
+                        <a class="dropdown-item" href="../Elon_Tweets/elon_tweets.html">Elon Musk Tweets</a>
+                        <a class="dropdown-item" href="../Movie_Project/Movie_Data.html">Movie Data</a>
+                        <a class="dropdown-item" href="../Bellybutton_Biodiversity/Bellybutton_Page.html">Bellybutton
+                            Biodiversity</a>
+                    </div>
+            </ul>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-12" id="inner">
+            <h2>
+                Analysis of St Louis County Real Estate Data for AI-AI
+            </h2>
+            <p class="prose">
+                Below is an iframe containing an early Heroky Deployment of the project. As it is deployed in Heroku's
+                free tier it may take a little while to load. As it is deployed in Heroku's free tier it may take a
+                little while to load.
+            </p>
+            <p class="prose">
+                Below that is a description of the project, though you can probably get a good feel for it simply by exploring the Tableau visualizations in the Market Analysis tab, or playing with my Machine Learning algorithm in the Predictive Analysis tab.
+            </p>
+            <p class="prose">
+                Iframe navigation can get a bit clunky, so you can instead click the button below for a direct link to the deployed site.
+            </p>
+            <a href="https://aiai-stl.herokuapp.com/index.html"><button type="button"
+                class="btn btn-secondary"style="background-color: rgb(1, 2, 70);">AI-AI Real Estate</button></a>
+
+        </div>
+        <div class="col-12">
+
+            <iframe src="https://aiai-stl.herokuapp.com/index.html" width="100%" , height="1150">
+
+            </iframe>
+            <div id = inner>
+                <h2>
+                    Description
+                </h2>
+                <p class="prose">
+                    This is an analysis of a nearly exhaustive data set containing residential real estate sales for St.
+                    Louis County from 2010-2020.
+                    The website has links to separate websites containing regional data for St. Louis but also contains
+                    Tableau visualizations of our data set on the Market Analysis tab.
+                    I also trained a Random Forest Regressor to predict home sale values based on a minimal number of
+                    parameters.
+                    The Random Forest Regressor is the smaller of two trained algorithms and the only one which could be
+                    deployed on Heroku.
+                    It only predicts within 5% of actual sale price about 25% of the time, making it not a great
+                    appraiser.
+                    The larger of the two models involved unsupervised clustering with a Gaussian Mixture algorithm and
+                    training different models for each cluster, resulting in a predictive pipeline which would first
+                    identify which cluster a property would be in and then use the respective model for that cluster.
+                    This has the benefit of a 50% increase in model accuracy as well as a dynamic estimation of its own
+                    confidence. This model was not deployed in the AI-AI project, however.
+
+                </p>
+                <p class="prose">
+                    You can have the more lightweight Random Forest model predict for real or hypothetical homes in the
+                    St Louis County area on the Predictive Analysis tab.
+                    While is does make some pretty wacky guesses, the true value of this algorithm come from the change
+                    in price adding a bedroom, selling an identical house on a later year, etc.
+                    For example, my personal home was sold twice within our reference window. The second sale was
+                    several years after an addition which added square-footage, a bedroom, a bathroom, and several years
+                    to the year of sale.
+                    Appraisals for both sales were around 30% off, a pretty useless estimate, but the change in sale
+                    price was within 1% of the predicted change. So while you might not be able to trust the appraisal
+                    of your home, it may be worth it reference the change in value if you're considering adding a
+                    bedroom, bathroom, etc.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

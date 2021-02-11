@@ -51,7 +51,12 @@ h5 {
     border-bottom: 2px solid rgb(1, 2, 70, 0.075);
     padding: 1em;
 }
-
+.prose{
+    text-indent: 40px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .info{
     font-size: 18px
 }
