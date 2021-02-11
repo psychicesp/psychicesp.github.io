@@ -7,8 +7,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="movie_style.css" media="all" />
-    <title>Movie Data</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" media="all" />
+    <title>Elon Tweets</title>
 </head>
 
 <body style = "font-family: Georgia, 'Times New Roman', Times, serif;">
@@ -43,12 +43,33 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" >
+        <div class = "col-12" id = "inner" >
+            <h2>
+                Effect of Elon Musk's Tweets on Global Happiness Indicies
+            </h2>
+            <p>
+                Below is an iframe containing the finished project, deployed in Heroku.  As it is deployed in Heroku's free tier it may take a little while to load.
+            </p>
+            <br>
+            <p>
+                This tongue-in-cheek analysis is a demonstration of how easily spurious correlations can arise in large datasets.  
+                We also used deceptive techniques for visualization such as the color scheme for the chloropheth map.
+                The point here is that everyone carries a bias, and biases can make your excitement for apparent patterns overshadow critical analysis.
+                Exploring these techniques turned up to the n-th degree when asserting an absurd causation can highlight where we might be fooling ourselves and others when testing more plausible links.
+            </p>
+            <br>
+            <p>
+                The plotly graphs are interactive with the leaflet map.  Clicking a country will plot its line on the line graph above, and you can switch between the response variables.
+                The formatting of the website doesn't always play nicely in the iframe so below is a link to the direct Heroku deployment.
+                
+            </p>
+            <br>
+            <a href="https://elon-happiness-tweets.herokuapp.com/"><button type="button"
+                class="btn btn-secondary"style="background-color: rgb(1, 2, 70);">Elon Musk Tweets on Heroku</button></a>
+        </div>
         <div class="col-12">
-            <br>
-            <br>
-            <br>
-            <br>
+
             <iframe src = "https://elon-happiness-tweets.herokuapp.com/" width = "100%", height = "1500">
 
             </iframe>
